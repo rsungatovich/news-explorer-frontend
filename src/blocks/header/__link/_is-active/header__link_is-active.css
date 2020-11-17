@@ -1,0 +1,13 @@
+.header__link.header__link_is-active {
+  color: #fff;
+  position: relative;
+}
+
+.header__link.header__link_is-active::before {
+  content: '';
+  left: 0;
+  bottom: -44px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid #fff;
+}
