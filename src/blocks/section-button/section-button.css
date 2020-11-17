@@ -1,0 +1,16 @@
+@import url(_theme_grey/section-button_theme_grey.css);
+@import url(_theme_white/section-button_theme_white.css);
+@import url(_theme_primary/section-button_theme_primary.css);
+@import url(_size_small/section-button_size_small.css);
+@import url(_size_large/section-button_size_large.css);
+@import url(_size_stretch/section-button_size_stretch.css);
+
+.section-button {
+  height: 64px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 80px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

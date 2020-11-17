@@ -3,6 +3,10 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/content/content.css);
+@import url(../blocks/cover/cover.css);
+
+@import url(../blocks/section-button/section-button.css);
+@import url(../blocks/mixes/mixes.css);
 
 .page {
   width: 100%;
