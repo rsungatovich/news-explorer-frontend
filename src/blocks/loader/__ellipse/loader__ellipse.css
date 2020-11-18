@@ -1,0 +1,16 @@
+@keyframes rotation_ellipse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader__ellipse {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  object-position: center;
+  animation: rotation_ellipse .5s linear infinite;
+}

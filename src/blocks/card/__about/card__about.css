@@ -1,0 +1,6 @@
+.card__about {
+  margin: 20px 24px 24px;
+  padding-bottom: 28px;
+  flex-grow: 1;
+  position: relative;
+}

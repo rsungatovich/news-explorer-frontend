@@ -1,4 +1,9 @@
 .section-button.section-button_theme_white {
   color: #1a1b22;
   background-color: #fff;
+  transition: .2s;
+}
+
+.section-button.section-button_theme_white:hover {
+  opacity: .7;
 }

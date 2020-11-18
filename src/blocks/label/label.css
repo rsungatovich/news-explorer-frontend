@@ -1,0 +1,22 @@
+@import url(./_type_remove/label_type_remove.css);
+@import url(./_type_not-available/label_type_not-available.css);
+
+.label {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: #000;
+  stroke: #b6bcbf;
+  background-color: #fff;
+  transition: .2s;
+  fill: none;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.label:hover {
+  stroke: #1a1b22;
+}

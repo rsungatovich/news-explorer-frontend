@@ -6,10 +6,15 @@
   border-radius: 100px;
   border: 1px solid #fff;
   color: #fff;
+  transition: .2s;
   display: flex;
   align-items: center;
   background-color: transparent;
   box-sizing: border-box;
   outline: none;
   cursor: pointer;
+}
+
+.header__button:hover {
+  opacity: .7;
 }
