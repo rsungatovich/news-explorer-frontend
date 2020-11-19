@@ -8,9 +8,12 @@
 @import url(../blocks/about/about.css);
 @import url(../blocks/footer/footer.css);
 
+@import url(../blocks/form/form.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/label/label.css);
+@import url(../blocks/popup/popup.css);
 @import url(../blocks/loader/loader.css);
+@import url(../blocks/overlay/overlay.css);
 @import url(../blocks/not-found/not-found.css);
 @import url(../blocks/container/container.css);
 @import url(../blocks/section-title/section-title.css);

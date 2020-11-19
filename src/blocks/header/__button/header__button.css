@@ -6,6 +6,7 @@
   border-radius: 100px;
   border: 1px solid #fff;
   color: #fff;
+  fill: #fff;
   transition: .2s;
   display: flex;
   align-items: center;
@@ -16,5 +17,7 @@
 }
 
 .header__button:hover {
-  opacity: .7;
+  color: #1a1b22;
+  fill: #1a1b22;
+  background-color: #fff;
 }

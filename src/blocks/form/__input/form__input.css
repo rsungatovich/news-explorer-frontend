@@ -1,0 +1,21 @@
+.form__input {
+  width: 358px;
+  min-height: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid #00000033;
+  background-color: transparent;
+  display: block;
+  outline: none;
+}
+
+.form__input:first-of-type {
+  margin-bottom: 5px;
+}
+
+.form__input:last-of-type {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,8 @@
+@import url(./__close/popup__close.css);
+
+.popup {
+  padding: 34px 36px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+}

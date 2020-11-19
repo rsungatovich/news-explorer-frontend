@@ -1,0 +1,16 @@
+@import url(./_is-visible/form__message_is-visible.css);
+
+.form__message {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  transition: .2s;
+  display: block;
+  visibility: hidden;
+}
+
+.form__message:last-of-type {
+  margin-bottom: 5px;
+  text-align: center;
+}

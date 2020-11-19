@@ -1,5 +1,6 @@
 .page {
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   background-color: #F5F6F7;
+  position: relative;
+  font-family: Roboto, sans-serif;
 }

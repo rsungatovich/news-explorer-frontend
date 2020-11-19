@@ -17,11 +17,18 @@
         <a class="header__link header__link_is-active" href="">Главная</a>
         <a class="header__link" href="">Сохраненные статьи</a>
         <button class="header__button is-hidden">Авторизоваться</button>
-        <button class="header__button">Грета
-          <img
+        <button class="header__button">Луна
+          <svg
             class="header__icon"
-            src="<%= require('../images/logout.svg') %>"
-            alt="Иконка выйти">
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z"
+            />
+          </svg>
         </button>
       </nav>
     </div>
@@ -130,7 +137,7 @@
       <div class="container about__container">
         <img
           class="about__avatar"
-          src="<%=require('../images/avatar.jpg') %>"
+          src="<%=require('../images/avatar.png') %>"
           alt="Изображение аватара"
         >
         <div class="about__wrapper">
@@ -184,6 +191,111 @@
       </nav>
     </div>
   </footer>
+  <div class="overlay is-hidden">
+    <div class="popup overlay__popup">
+      <svg
+        class="popup__close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 40 40"
+      >
+        <path d="M22.357 20l8.821 8.822-2.357 2.357L18.35 20.707a1 1 0 010-1.414L28.82 8.822l2.357 2.357L22.357 20z"/>
+        <path d="M18.13 20l-8.82 8.822 2.356 2.357 10.472-10.472a1 1 0 000-1.414L11.666 8.822 9.31 11.179 18.131 20z"/>
+      </svg>
+      <form class="form popup__form is-hidden">
+        <h3 class="form__title">Вход</h3>
+        <label
+          class="form__label"
+          for="email">Email
+        </label>
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          autocomplete="off"
+          required
+        >
+        <span class="form__message">Неправильный формат email</span>
+        <label
+          class="form__label"
+          for="password">Password
+        </label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          autocomplete="off"
+          required
+        >
+        <span class="form__message">Неправильная почта или пароль</span>
+        <button
+          class="section-button
+          section-button_is-stretch
+          section-button_theme_primary
+          form__section-button"
+        >
+          Войти
+        </button>
+        <div class="form__wrapper">
+          <span class="form__excerpt">или</span>
+          <a class="form__link" href="">Зарегистрироваться</a>
+        </div>
+      </form>
+      <form class="form popup__form is-hidden">
+        <h3 class="form__title">Регистрация</h3>
+        <label
+          class="form__label"
+          for="createEmail">Email
+        </label>
+        <input
+          class="form__input"
+          id="createEmail"
+          type="email"
+          autocomplete="off"
+          required
+        >
+        <span class="form__message">Неправильный формат email</span>
+        <label
+          class="form__label"
+          for="createPassword">Password
+        </label>
+        <input
+          class="form__input"
+          id="createPassword"
+          type="password"
+          autocomplete="off"
+          required
+        >
+        <label
+          class="form__label"
+          for="createName">Name
+        </label>
+        <input
+          class="form__input"
+          id="createName"
+          type="text"
+          autocomplete="off"
+          required
+        >
+        <span class="form__message">Такой пользователь уже есть</span>
+        <button
+          class="section-button
+          section-button_is-stretch
+          section-button_theme_primary
+          form__section-button"
+        >
+          Зарегистрироваться
+        </button>
+        <div class="form__wrapper">
+          <span class="form__excerpt">или</span>
+          <a class="form__link" href="">Войти</a>
+        </div>
+      </form>
+      <form class="form popup__form is-hidden">
+        <h3 class="form__title">Пользователь успешно зарегистрирован!</h3>
+        <a class="form__link" href="">Войти</a>
+      </form>
+    </div>
+  </div>
 </div>
 <script src="<%=htmlWebpackPlugin.files.js %>"></script>
 </body>
