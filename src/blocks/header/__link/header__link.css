@@ -1,4 +1,5 @@
 @import url(./_is-active/header__link_is-active.css);
+@import url(./_theme_white/header__link_theme_white.css);
 
 .header__link {
   margin-right: 32px;
@@ -10,6 +11,6 @@
   text-decoration: none;
 }
 
-.header__link:hover {
+.header__link:not(.header__link_theme_white):hover {
   color: #fff;
 }

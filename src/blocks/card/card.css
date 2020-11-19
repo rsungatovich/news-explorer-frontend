@@ -5,7 +5,7 @@
 @import url(./__title/card__title.css);
 @import url(./__about/card__about.css);
 @import url(./__icon/card__icon.css);
-@import url(./__text/card__text.css);
+@import url(./__tag/card__tag.css);
 @import url(./__label/card__label.css);
 
 .card {

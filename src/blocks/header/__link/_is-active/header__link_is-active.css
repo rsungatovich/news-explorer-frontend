@@ -11,3 +11,7 @@
   position: absolute;
   border-bottom: 3px solid #fff;
 }
+
+.header__link_theme_white.header__link_is-active::before {
+  border-bottom: 3px solid #1a1b22;
+}

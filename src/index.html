@@ -4,18 +4,20 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Рим">
+  <meta name="description" content="Дипломная работа студента Яндекс Практикум.">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"/>
-  <link rel="icon" href="<%=require('../images/favicon.svg').default %>"/>
+  <link rel="icon" href="<%=require('../images/favicon.svg') %>"/>
   <title>News Explorer</title>
 </head>
 <body>
 <div class="page">
-  <header class="header">
+  <header class="header page__header">
     <div class="container header__container">
       <h1 class="header__logo">NewsExplorer</h1>
       <nav class="header__menu">
-        <a class="header__link header__link_is-active" href="">Главная</a>
-        <a class="header__link" href="">Сохраненные статьи</a>
+        <a class="header__link header__link_is-active" href="index.html">Главная</a>
+        <a class="header__link" href="articles.html">Сохраненные статьи</a>
         <button class="header__button is-hidden">Авторизоваться</button>
         <button class="header__button">Луна
           <svg
@@ -159,12 +161,12 @@
         <a
           class="footer__link"
           target="_blank"
-          href=""
+          href="index.html"
         >Главная</a>
         <a
           class="footer__link"
           target="_blank"
-          href="https://praktikum.yandex.ru/"
+          href="https://praktikum.yandex.ru"
         >Яндекс.Практикум</a>
         <a
           class="footer__link"
@@ -201,7 +203,7 @@
         <path d="M22.357 20l8.821 8.822-2.357 2.357L18.35 20.707a1 1 0 010-1.414L28.82 8.822l2.357 2.357L22.357 20z"/>
         <path d="M18.13 20l-8.82 8.822 2.356 2.357 10.472-10.472a1 1 0 000-1.414L11.666 8.822 9.31 11.179 18.131 20z"/>
       </svg>
-      <form class="form popup__form is-hidden">
+      <form class="form popup__form">
         <h3 class="form__title">Вход</h3>
         <label
           class="form__label"
@@ -237,7 +239,7 @@
         </button>
         <div class="form__wrapper">
           <span class="form__excerpt">или</span>
-          <a class="form__link" href="">Зарегистрироваться</a>
+          <a class="form__link">Зарегистрироваться</a>
         </div>
       </form>
       <form class="form popup__form is-hidden">
@@ -287,15 +289,16 @@
         </button>
         <div class="form__wrapper">
           <span class="form__excerpt">или</span>
-          <a class="form__link" href="">Войти</a>
+          <a class="form__link">Войти</a>
         </div>
       </form>
       <form class="form popup__form is-hidden">
         <h3 class="form__title">Пользователь успешно зарегистрирован!</h3>
-        <a class="form__link" href="">Войти</a>
+        <a class="form__link">Войти</a>
       </form>
     </div>
   </div>
+  <i class="preloader is-hidden"></i>
 </div>
 <script src="<%=htmlWebpackPlugin.files.js %>"></script>
 </body>

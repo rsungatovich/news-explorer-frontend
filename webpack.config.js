@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: { 
+        use: {
           loader: "babel-loader",
           options: {
             plugins: ['transform-class-properties']
@@ -27,13 +27,13 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
+          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
           {
             loader:'css-loader',
             options: {
               importLoaders: 2
             }
-          }, 
+          },
           'postcss-loader'
         ]
       },
@@ -98,6 +98,11 @@ module.exports = {
       inject: false,
       template: './src/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/articles.html',
+      filename: 'articles.html'
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

@@ -4,11 +4,9 @@
 @import url(./__button/header__button.css);
 @import url(./__icon/header__icon.css);
 @import url(./__logo/header__logo.css);
+@import url(./_theme_white/header_theme_white.css);
 
 .header {
-  top: 0;
-  left: 0;
   width: 100%;
-  position: absolute;
   border-bottom: 1px solid #ffffff33;
 }

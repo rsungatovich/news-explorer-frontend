@@ -19,4 +19,5 @@
 
 .label:hover {
   stroke: #1a1b22;
+  fill: none;
 }

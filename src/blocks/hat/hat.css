@@ -1,0 +1,9 @@
+@import url(./__container/hat__container.css);
+@import url(./__subtitle/hat__subtitle.css);
+@import url(./__section-title/hat__section-title.css);
+@import url(./__keywords/hat__keywords.css);
+@import url(./__words/hat__words.css);
+
+.hat {
+  background-color: #fff;
+}
