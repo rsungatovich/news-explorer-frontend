@@ -7,3 +7,15 @@
   object-position: center;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1280px) {
+  .card__image {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card__image {
+    height: 150px;
+  }
+}

@@ -41,6 +41,7 @@
 }
 
 .label.label_type_remove:hover::after {
+  z-index: 1;
   opacity: 1;
   visibility: visible;
 }

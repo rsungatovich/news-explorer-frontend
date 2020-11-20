@@ -1,3 +1,10 @@
 .hat__section-title {
   margin: 0 0 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .section-title.hat__section-title {
+    max-width: 336px;
+    margin: 0 0 16px;
+  }
+}

@@ -19,3 +19,9 @@
   color: #b6bcbf !important;
   background-color: #e6e8eb !important;
 }
+
+@media screen and (max-width: 1024px) {
+  .section-button {
+    height: 56px;
+  }
+}

@@ -1,3 +1,23 @@
 .cards__section-title {
   margin: 0 0 64px;
 }
+
+@media screen and (max-width: 1024px) {
+  .cards__section-title {
+    margin: 0 0 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards__section-title {
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .cards__section-title {
+    margin: 0 0 24px;
+    text-align: unset;
+  }
+}

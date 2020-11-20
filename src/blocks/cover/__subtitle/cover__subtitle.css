@@ -5,3 +5,16 @@
   line-height: 24px;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .cover__subtitle {
+    max-width: 452px;
+    margin: 0 0 48px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle {
+    margin: 0 0 120px;
+  }
+}

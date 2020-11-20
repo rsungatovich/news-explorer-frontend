@@ -5,3 +5,16 @@
   color: #1a1b22;
   opacity: .5;
 }
+
+@media screen and (max-width: 768px) {
+  .hat__subtitle {
+    font-size: 14px;
+    margin: 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hat__subtitle {
+    font-size: 12px;
+  }
+}

@@ -23,3 +23,19 @@
   fill: #1a1b22;
   background-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header__button {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

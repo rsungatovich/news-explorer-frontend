@@ -6,3 +6,10 @@
   color: #1a1b22;
   font-family: Roboto Slab, sans-serif;
 }
+
+@media screen and (max-width: 1024px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}

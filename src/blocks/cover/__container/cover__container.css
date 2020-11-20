@@ -1,0 +1,28 @@
+.cover__container {
+  width: 100%;
+  min-height: 576px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cover__container {
+    min-height: 400px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cover__container {
+    min-height: 468px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__container {
+    min-height: 536px;
+    padding-bottom: 30px;
+  }
+}

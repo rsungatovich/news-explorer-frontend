@@ -24,3 +24,15 @@
 .card:hover {
   box-shadow: 0 0 10px #081d2d1f;
 }
+
+@media screen and (max-width: 1280px) {
+  .card {
+    min-height: 444px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 288px;
+  }
+}

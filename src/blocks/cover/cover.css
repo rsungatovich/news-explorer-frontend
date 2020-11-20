@@ -1,3 +1,4 @@
+@import url(./__container/cover__container.css);
 @import url(./__search/cover__search.css);
 @import url(./__section-button/cover__section-button.css);
 @import url(./__subtitle/cover__subtitle.css);
@@ -7,11 +8,6 @@
 
 .cover {
   width: 100%;
-  min-height: 576px;
-  padding-bottom: 80px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   box-sizing: border-box;
   background-size: cover;
   background-position: center;

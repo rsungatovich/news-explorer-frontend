@@ -6,3 +6,19 @@
 @import url(./__wrapper/form__wrapper.css);
 @import url(./__excerpt/form__excerpt.css);
 @import url(./__link/form__link.css);
+
+.form {
+  width: 358px;
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form {
+    width: 100%;
+  }
+}

@@ -3,3 +3,10 @@
   right: 0;
   position: absolute;
 }
+
+@media screen and (max-width: 640px) {
+  .cover__section-button {
+    width: 100%;
+    position: unset;
+  }
+}

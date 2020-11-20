@@ -8,3 +8,7 @@
   position: absolute;
   font-family: Roboto Slab, serif;
 }
+
+@media screen and (max-width: 1280px) {
+
+}
