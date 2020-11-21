@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="author" content="Рим">
   <meta name="description" content="Дипломная работа студента Яндекс Практикум.">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"/>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>"/>
   <link rel="icon" href="<%=require('../images/favicon.svg') %>"/>
   <title>News Explorer</title>
 </head>
@@ -82,7 +82,7 @@
         <h3 class="section-title cards__section-title">Результаты поиска</h3>
         <div class="cards__wrapper">
           <div class="card">
-            <div class="label label_type_not-available card__label">
+            <div class="label card__label label_type_not-available">
               <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
               </svg>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="label label_type_not-available card__label">
+            <div class="label card__label">
               <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
               </svg>
@@ -114,7 +114,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="label label_type_not-available card__label">
+            <div class="label card__label label_is-selected">
               <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
               </svg>
@@ -161,7 +161,7 @@
       <div class="container about__container">
         <img
           class="about__avatar"
-          src="<%=require('../images/avatar.png') %>"
+          src="<%=require('../images/avatar.jpg') %>"
           alt="Изображение аватара"
         >
         <div class="about__wrapper">
@@ -193,23 +193,23 @@
         <a
           class="footer__link"
           target="_blank"
-          href="https://www.facebook.com/profile.php?id=100041341095855"
+          href="https://github.com/rsungatovich"
         >
           <img
             class="footer__icon"
             src="<%=require('../images/gh.svg') %>"
-            alt="Логотип Facebook"
+            alt="Логотип Github"
           >
         </a>
         <a
           class="footer__link"
           target="_blank"
-          href="https://github.com/rsungatovich"
+          href="https://www.facebook.com/profile.php?id=100041341095855"
         >
           <img
             class="footer__icon"
             src="<%=require('../images/fb.svg') %>"
-            alt="Логотип Github"
+            alt="Логотип Facebook"
           >
         </a>
       </nav>
@@ -319,6 +319,6 @@
     </div>
   </div>
 </div>
-<script src="<%=htmlWebpackPlugin.files.js %>"></script>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

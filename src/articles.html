@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="author" content="Рим">
   <meta name="description" content="Дипломная работа студента Яндекс Практикум.">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>"/>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>"/>
   <link rel="icon" href="<%=require('../images/favicon.svg') %>"/>
   <title>News Explorer</title>
 </head>
@@ -184,29 +184,29 @@
         <a
           class="footer__link"
           target="_blank"
-          href="https://www.facebook.com/profile.php?id=100041341095855"
+          href="https://github.com/rsungatovich"
         >
           <img
             class="footer__icon"
             src="<%=require('../images/gh.svg') %>"
-            alt="Логотип Facebook"
+            alt="Логотип Github"
           >
         </a>
         <a
           class="footer__link"
           target="_blank"
-          href="https://github.com/rsungatovich"
+          href="https://www.facebook.com/profile.php?id=100041341095855"
         >
           <img
             class="footer__icon"
             src="<%=require('../images/fb.svg') %>"
-            alt="Логотип Github"
+            alt="Логотип Facebook"
           >
         </a>
       </nav>
     </div>
   </footer>
 </div>
-<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+<script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 </html>

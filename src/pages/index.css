@@ -23,7 +23,3 @@
 
 @import url(../blocks/mixes/mixes.css);
 
-.page {
-  width: 100%;
-  position: relative;
-}

@@ -1,6 +1,7 @@
 .cover__container {
   width: 100%;
   min-height: 576px;
+  margin: 0 auto;
   padding-bottom: 80px;
   display: flex;
   align-items: flex-end;

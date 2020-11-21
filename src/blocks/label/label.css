@@ -1,5 +1,6 @@
 @import url(./_type_remove/label_type_remove.css);
 @import url(./_type_not-available/label_type_not-available.css);
+@import url(./_is-selected/label_is-selected.css);
 
 .label {
   min-width: 40px;

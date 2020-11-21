@@ -1,0 +1,9 @@
+.label.label_is-selected {
+  fill: #2f71e5;
+  stroke: none;
+}
+
+.label.label_is-selected:hover {
+  fill: #2f71e5;
+  stroke: none;
+}
