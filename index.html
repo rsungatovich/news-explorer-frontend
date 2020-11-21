@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Рим">
+  <meta name="description" content="Дипломная работа студента Яндекс Практикум.">
+  <link rel="stylesheet" href="style.7522bbfe0b3d31bab733.css"/>
+  <link rel="icon" href="./images/favicon.svg"/>
+  <title>News Explorer</title>
+</head>
+<body>
+<div class="page">
+  <header class="header page__header">
+    <nav class="header__menu-bar">
+      <a class="header__link header__link_theme_mobile" href="index.html">Главная</a>
+      <a class="header__link header__link_theme_mobile" href="articles.html">Сохраненные статьи</a>
+      <button class="header__button is-hidden">Авторизоваться</button>
+      <button class="header__button">Луна
+        <svg
+          class="header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z"
+          />
+        </svg>
+      </button>
+    </nav>
+    <div class="container header__container">
+      <h1 class="header__logo">NewsExplorer</h1>
+      <nav class="header__menu">
+        <a class="header__link header__link_is-active" href="index.html">Главная</a>
+        <a class="header__link" href="articles.html">Сохраненные статьи</a>
+        <button class="header__button is-hidden">Авторизоваться</button>
+        <button class="header__button">Луна
+          <svg
+            class="header__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z"
+            />
+          </svg>
+        </button>
+      </nav>
+      <img class="header__icon header__icon_type_menu" src="./images/menu.svg" alt="Иконка меню">
+      <img class="header__icon header__icon_type_menu is-hidden" src="./images/close.svg" alt="Иконка закрыть">
+    </div>
+  </header>
+  <main class="content">
+    <section class="cover">
+      <div class="container cover__container">
+        <div class="cover__wrapper">
+          <h2 class="cover__title">Что творится в мире?</h2>
+          <p class="cover__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+          <div class="cover__inner">
+            <input
+              class="cover__search"
+              placeholder="Введите тему новости"
+            >
+            <button
+              class="section-button
+              section-button_theme_primary
+              section-button_size_small
+              cover__section-button"
+            >Искать
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="container cards__container">
+        <h3 class="section-title cards__section-title">Результаты поиска</h3>
+        <div class="cards__wrapper">
+          <div class="card">
+            <div class="label card__label label_type_not-available">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
+              </svg>
+            </div>
+            <img class="card__image" src="./images/card1.jpg" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Национальное достояние – парки</h4>
+              <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <cite class="card__source">Лента.ру</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
+              </svg>
+            </div>
+            <img class="card__image" src="./images/card2.jpg" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="card__description">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <cite class="card__source">Медуза</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label card__label label_is-selected">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path stroke-width="2" d="M11.382 15.714L6 19.942V4h12v15.942l-5.382-4.228-.618-.486-.618.486z"/>
+              </svg>
+            </div>
+            <img class="card__image" src="./images/card3.jpg" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="card__description">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <cite class="card__source">Риа</cite>
+            </div>
+          </div>
+        </div>
+        <div class="loader cards__loader is-hidden">
+          <img
+            class="loader__ellipse"
+            src="./images/ellipse.png"
+            alt="Иконка загрузки"
+          >
+          <p class="loader__description">Идет поиск новостей...</p>
+        </div>
+        <div class="not-found cards__not-found is-hidden">
+          <img
+            class="not-found__icon"
+            src="./images/not-found.svg"
+            alt="Иконка загрузки"
+          >
+          <h3 class="not-found__title">Ничего не найдено</h3>
+          <p class="not-found__description">К сожалению по вашему запросу
+            ничего не найдено.</p>
+        </div>
+        <button
+          class="section-button
+          section-button_size_large
+          section-button_theme_white
+          cards__section-button"
+        >
+          Показать еще
+        </button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container about__container">
+        <img
+          class="about__avatar"
+          src="./images/avatar.jpg"
+          alt="Изображение аватара"
+        >
+        <div class="about__wrapper">
+          <h3 class="section-title about__section-title">Об авторе</h3>
+          <p class="about__description">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+            вы занимаетесь, какими технологиями разработки владеете.
+          </p>
+          <p class="about__description">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+            и чем можете помочь потенциальным заказчикам.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <address class="footer__copyright">&copy; 2020 Supersite, Powered by News API</address>
+      <nav class="footer__menu">
+        <a
+          class="footer__link"
+          target="_blank"
+          href="index.html"
+        >Главная</a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://praktikum.yandex.ru"
+        >Яндекс.Практикум</a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100041341095855"
+        >
+          <img
+            class="footer__icon"
+            src="./images/gh.svg"
+            alt="Логотип Facebook"
+          >
+        </a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/rsungatovich"
+        >
+          <img
+            class="footer__icon"
+            src="./images/fb.svg"
+            alt="Логотип Github"
+          >
+        </a>
+      </nav>
+    </div>
+  </footer>
+  <div class="overlay is-hidden">
+    <div class="popup overlay__popup">
+      <img class="popup__close" src="./images/close.svg" alt="Иконка закрыть">
+      <form class="form popup__form">
+        <h3 class="form__title">Вход</h3>
+        <label
+          class="form__label"
+          for="email">Email
+        </label>
+        <input
+          class="form__input"
+          id="email"
+          type="email"
+          autocomplete="off"
+          placeholder="Введите почту"
+          required
+        >
+        <span class="form__message">Неправильный формат email</span>
+        <label
+          class="form__label"
+          for="password">Password
+        </label>
+        <input
+          class="form__input"
+          id="password"
+          type="password"
+          autocomplete="off"
+          placeholder="Введите пароль"
+          required
+        >
+        <span class="form__message">Неправильная почта или пароль</span>
+        <button
+          class="section-button
+          section-button_is-stretch
+          section-button_theme_primary
+          form__section-button"
+        >
+          Войти
+        </button>
+        <div class="form__wrapper">
+          <span class="form__excerpt">или</span>
+          <a class="form__link">Зарегистрироваться</a>
+        </div>
+      </form>
+      <form class="form popup__form is-hidden">
+        <h3 class="form__title">Регистрация</h3>
+        <label
+          class="form__label"
+          for="createEmail">Email
+        </label>
+        <input
+          class="form__input"
+          id="createEmail"
+          type="email"
+          autocomplete="off"
+          placeholder="Введите почту"
+          required
+        >
+        <span class="form__message">Неправильный формат email</span>
+        <label
+          class="form__label"
+          for="createPassword">Password
+        </label>
+        <input
+          class="form__input"
+          id="createPassword"
+          type="password"
+          autocomplete="off"
+          placeholder="Введите пароль"
+          required
+        >
+        <label
+          class="form__label"
+          for="createName">Name
+        </label>
+        <input
+          class="form__input"
+          id="createName"
+          type="text"
+          autocomplete="off"
+          placeholder="Введите своё имя"
+          required
+        >
+        <span class="form__message">Такой пользователь уже есть</span>
+        <button
+          class="section-button
+          section-button_is-stretch
+          section-button_theme_primary
+          form__section-button"
+        >
+          Зарегистрироваться
+        </button>
+        <div class="form__wrapper">
+          <span class="form__excerpt">или</span>
+          <a class="form__link">Войти</a>
+        </div>
+      </form>
+      <form class="form popup__form is-hidden">
+        <h3 class="form__title">Пользователь успешно зарегистрирован!</h3>
+        <a class="form__link">Войти</a>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="main.d69286c2e3df796e9c29.js"></script>
+</body>
+</html>
