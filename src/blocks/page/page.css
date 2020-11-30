@@ -1,0 +1,9 @@
+@import url(./__header/page__header.css);
+
+.page {
+  min-width: 320px;
+  font-weight: 400;
+  background-color: #F5F6F7;
+  position: relative;
+  font-family: Roboto, sans-serif;
+}

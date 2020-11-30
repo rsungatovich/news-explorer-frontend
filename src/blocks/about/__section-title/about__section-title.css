@@ -1,0 +1,17 @@
+.about__section-title {
+  margin: 0 0 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__section-title {
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about__section-title {
+    margin: 0 0 24px;
+    text-align: unset;
+  }
+}

@@ -1,0 +1,9 @@
+.section-button.section-button_size_large {
+  padding: 0 84px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-button.section-button_size_large {
+    padding: 0 60px;
+  }
+}

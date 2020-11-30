@@ -1,0 +1,36 @@
+.cover__search {
+  width: 608px;
+  height: 64px;
+  padding: 0 194px 0 24px;
+  color: #1a1b22;
+  border-radius: 100px;
+  border: 1px solid #d1d2d6;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cover__search::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
+}
+@media screen and (max-width: 1024px) {
+  .cover__search {
+    height: 56px;
+    padding: 0 184px 0 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__search {
+    width: 452px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cover__search {
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+}

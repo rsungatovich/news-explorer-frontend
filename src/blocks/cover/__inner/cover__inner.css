@@ -1,0 +1,13 @@
+.cover__inner {
+  position: relative;
+}
+
+@media screen and (max-width: 640px) {
+  .cover__inner {
+    display: flex;
+    position: unset;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

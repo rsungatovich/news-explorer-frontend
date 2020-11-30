@@ -1,0 +1,24 @@
+@import url(./__title/form__title.css);
+@import url(./__label/form__label.css);
+@import url(./__input/form__input.css);
+@import url(./__section-button/form__section-button.css);
+@import url(./__message/form__message.css);
+@import url(./__wrapper/form__wrapper.css);
+@import url(./__excerpt/form__excerpt.css);
+@import url(./__link/form__link.css);
+
+.form {
+  width: 358px;
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form {
+    width: 100%;
+  }
+}

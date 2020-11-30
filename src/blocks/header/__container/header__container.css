@@ -1,0 +1,22 @@
+.header__container {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header__container {
+    position: relative;
+  }
+}

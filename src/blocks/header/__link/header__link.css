@@ -1,0 +1,31 @@
+@import url(./_is-active/header__link_is-active.css);
+@import url(./_theme_white/header__link_theme_white.css);
+
+.header__link {
+  margin-right: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.header__link:not(.header__link_theme_white):hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header__link {
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 18px;;
+    color: #fff;
+  }
+}

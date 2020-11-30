@@ -1,0 +1,13 @@
+.section-button.section-button_theme_primary {
+  color: #fff;
+  background-color: #2f71e5;
+  transition: .2s;
+}
+
+.section-button.section-button_theme_primary:hover {
+  background-color: #347eff;
+}
+
+.section-button.section-button_theme_primary:active {
+  background-color: #2a65cc;
+}

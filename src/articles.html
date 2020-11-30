@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="author" content="Рим">
+  <meta name="description" content="Дипломная работа студента Яндекс Практикум.">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>"/>
+  <link rel="icon" href="<%=require('../images/favicon.svg') %>"/>
+  <title>News Explorer</title>
+</head>
+<body>
+<div class="page">
+  <header class="header header_theme_white">
+    <nav class="header__menu-bar">
+      <a class="header__link header__link_theme_mobile" href="index.html">Главная</a>
+      <a class="header__link header__link_theme_mobile" href="articles.html">Сохраненные статьи</a>
+      <button class="header__button is-hidden">Авторизоваться</button>
+      <button class="header__button">Луна
+        <svg
+          class="header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z"
+          />
+        </svg>
+      </button>
+    </nav>
+    <div class="container header__container">
+      <h1 class="header__logo header__logo_theme_white">NewsExplorer</h1>
+      <nav class="header__menu">
+        <a class="header__link header__link_theme_white" href="index.html">Главная</a>
+        <a class="header__link header__link_theme_white header__link_is-active" href="articles.html">Сохраненные
+          статьи</a>
+        <button class="header__button header__button_theme_white is-hidden">Авторизоваться</button>
+        <button class="header__button header__button_theme_white">Луна
+          <svg
+            class="header__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10 6H6v12h4v2H6a2 2 0 01-2-2V6a2 2 0 012-2h4v2zm7.586 7l-4.293 4.134 1.414 1.362 6.707-6.459-6.707-6.459-1.414 1.362 4.293 4.134H8V13h9.586z"
+            />
+          </svg>
+        </button>
+      </nav>
+      <img class="header__icon header__icon_type_menu" src="<%=require('../images/menu_dark.svg') %>" alt="Иконка меню">
+      <img class="header__icon header__icon_type_menu is-hidden" src="<%=require('../images/close.svg') %>" alt="Иконка закрыть">
+    </div>
+  </header>
+  <main class="content">
+    <section class="hat">
+      <div class="container hat__container">
+        <p class="hat__subtitle">Сохранённые статьи</p>
+        <h2 class="section-title hat__section-title">Луна, у вас 5 сохранённых статей</h2>
+        <p class="hat__keywords">По ключевым словам:
+          <span class="hat__words">Природа, Тайга</span> и <span class="hat__words">2-м другим</span>
+        </p>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container articles__container">
+        <div class="articles__wrapper">
+          <div class="card">
+            <div class="label label_type_remove card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15 3H9v2H3v2h18V5h-6V3zM5 9v11a2 2 0 002 2h10a2 2 0 002-2V9h-2v11H7V9H5zm4 0v9h2V9H9zm4 0v9h2V9h-2z"/>
+              </svg>
+            </div>
+            <div class="label card__label">
+              <span class="card__tag">Природа</span>
+            </div>
+            <img class="card__image" src="<%= require('../images/card4.jpg') %>" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Национальное достояние – парки</h4>
+              <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <cite class="card__source">Дзен</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label label_type_remove card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15 3H9v2H3v2h18V5h-6V3zM5 9v11a2 2 0 002 2h10a2 2 0 002-2V9h-2v11H7V9H5zm4 0v9h2V9H9zm4 0v9h2V9h-2z"/>
+              </svg>
+            </div>
+            <div class="label card__label">
+              <span class="card__tag">Природа</span>
+            </div>
+            <img class="card__image" src="<%= require('../images/card5.jpg') %>" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="card__description">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <cite class="card__source">Афиша</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label label_type_remove card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15 3H9v2H3v2h18V5h-6V3zM5 9v11a2 2 0 002 2h10a2 2 0 002-2V9h-2v11H7V9H5zm4 0v9h2V9H9zm4 0v9h2V9h-2z"/>
+              </svg>
+            </div>
+            <div class="label card__label">
+              <span class="card__tag">Тайга</span>
+            </div>
+            <img class="card__image" src="<%= require('../images/card6.jpg') %>" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h4>
+              <p class="card__description">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+                необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+              <cite class="card__source">Медиазона</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label label_type_remove card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15 3H9v2H3v2h18V5h-6V3zM5 9v11a2 2 0 002 2h10a2 2 0 002-2V9h-2v11H7V9H5zm4 0v9h2V9H9zm4 0v9h2V9h-2z"/>
+              </svg>
+            </div>
+            <div class="label card__label">
+              <span class="card__tag">Парки</span>
+            </div>
+            <img class="card__image" src="<%= require('../images/card4.jpg') %>" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Национальное достояние – парки</h4>
+              <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                складываться система национальных
+                парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+              <cite class="card__source">Дзен</cite>
+            </div>
+          </div>
+          <div class="card">
+            <div class="label label_type_remove card__label">
+              <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15 3H9v2H3v2h18V5h-6V3zM5 9v11a2 2 0 002 2h10a2 2 0 002-2V9h-2v11H7V9H5zm4 0v9h2V9H9zm4 0v9h2V9h-2z"/>
+              </svg>
+            </div>
+            <div class="label card__label">
+              <span class="card__tag">Фотографии</span>
+            </div>
+            <img class="card__image" src="<%= require('../images/card5.jpg') %>" alt="Картинка из статьи">
+            <div class="card__about">
+              <time class="card__date" datetime="2019-08-02">2 августа, 2019</time>
+              <h4 class="card__title">Лесные огоньки: история одной фотографии</h4>
+              <p class="card__description">Фотограф отвлеклась от освещения суровой политической реальности Мексики,
+                чтобы запечатлеть ускользающую красоту одного
+                из местных чудес природы.</p>
+              <cite class="card__source">Афиша</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <address class="footer__copyright">&copy; 2020 Supersite, Powered by News API</address>
+      <nav class="footer__menu">
+        <a
+          class="footer__link"
+          target="_blank"
+          href="index.html"
+        >Главная</a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://praktikum.yandex.ru/"
+        >Яндекс.Практикум</a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://github.com/rsungatovich"
+        >
+          <img
+            class="footer__icon"
+            src="<%=require('../images/gh.svg') %>"
+            alt="Логотип Github"
+          >
+        </a>
+        <a
+          class="footer__link"
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100041341095855"
+        >
+          <img
+            class="footer__icon"
+            src="<%=require('../images/fb.svg') %>"
+            alt="Логотип Facebook"
+          >
+        </a>
+      </nav>
+    </div>
+  </footer>
+</div>
+<script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
+</body>
+</html>

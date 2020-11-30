@@ -1,0 +1,9 @@
+.header__icon.header__icon_type_menu {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .header__icon.header__icon_type_menu {
+    display: unset;
+  }
+}

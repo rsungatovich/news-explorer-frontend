@@ -1,0 +1,10 @@
+.card__label {
+  top: 24px;
+  right: 24px;
+}
+
+.card__label:nth-child(2) {
+  top: 24px;
+  left: 24px;
+  width: max-content;
+}

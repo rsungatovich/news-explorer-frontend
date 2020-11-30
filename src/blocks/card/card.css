@@ -1,0 +1,38 @@
+@import url(./__date/card__date.css);
+@import url(./__description/card__description.css);
+@import url(./__image/card__image.css);
+@import url(./__source/card__source.css);
+@import url(./__title/card__title.css);
+@import url(./__about/card__about.css);
+@import url(./__icon/card__icon.css);
+@import url(./__tag/card__tag.css);
+@import url(./__label/card__label.css);
+
+.card {
+  max-width: 400px;
+  min-height: 576px;
+  font-size: 0;
+  transition: .2s;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #081d2d1f;
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    min-height: 444px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 288px;
+  }
+}

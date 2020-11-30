@@ -1,0 +1,47 @@
+.label.label_type_remove {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: #000;
+  fill: #b6bcbf;
+  stroke: none;
+  background-color: #fff;
+  transition: .2s;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.label.label_type_remove:hover {
+  fill: #1a1b22;
+  stroke: none;
+}
+
+
+.label.label_type_remove::after {
+  content: 'Убрать из сохранённых';
+  top: 0;
+  left: -140px;
+  height: 40px;
+  padding: 0 13px;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0;
+  color: #000;
+  transition: .2s;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.label.label_type_remove:hover::after {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}

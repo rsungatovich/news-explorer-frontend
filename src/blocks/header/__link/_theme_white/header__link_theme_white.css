@@ -1,0 +1,7 @@
+.header__link.header__link_theme_white {
+  color: #1a1b22;
+}
+
+.header__link.header__link_theme_white:not(.header__link_is-active):hover {
+  color: #1a1b2270;
+}
