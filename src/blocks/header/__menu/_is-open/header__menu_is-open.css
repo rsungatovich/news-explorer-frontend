@@ -1,0 +1,8 @@
+.header__menu.header__menu_is-open {
+  transform: translateY(0);
+  display: flex;
+}
+
+.header__menu.header__menu_is-open::after {
+  opacity: 1;
+}

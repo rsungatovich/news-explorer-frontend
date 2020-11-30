@@ -6,6 +6,7 @@
 @import url(./__wrapper/form__wrapper.css);
 @import url(./__excerpt/form__excerpt.css);
 @import url(./__link/form__link.css);
+@import url(./__fieldset/form__fieldset.css);
 
 .form {
   width: 358px;

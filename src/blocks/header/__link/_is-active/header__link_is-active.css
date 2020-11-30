@@ -21,3 +21,11 @@
     bottom: -25px;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .header__link.header__link_is-active::before {
+    left: 0;
+    bottom: 0;
+    border-bottom: 0 solid transparent;
+  }
+}
