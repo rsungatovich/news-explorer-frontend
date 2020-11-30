@@ -1,6 +1,7 @@
 export default class Popup {
   constructor(props) {
     this.popup = props.popup;
+    this.clearForm = props.clearForm;
     this.forms = props.formItems.forms;
     this.links = props.formItems.links;
     this.openButton = props.openButton;
@@ -11,7 +12,6 @@ export default class Popup {
   }
 
   _open = () => {
-    this._setContent(this.defaultForm);
     this.popup.classList.remove(this.isHiddenClass);
   }
 
@@ -21,17 +21,24 @@ export default class Popup {
 
   _setContent = (id) => {
     this.forms.forEach((form) => {
-      id.includes(form.id)
+      id.toLowerCase().includes(form.id.toLowerCase())
         ? form.classList.remove(this.isHiddenClass)
         : form.classList.add(this.isHiddenClass);
     })
   }
 
   _addListeners = () => {
-    this.openButton.addEventListener('click', this._open);
     this.closeButton.addEventListener('click', this._close);
+
+    this.openButton.addEventListener('click', () => {
+      this._setContent(this.defaultForm);
+      this.clearForm();
+      this._open()
+    });
+
     this.links.forEach((link) => link.addEventListener('click', () => {
       this._setContent(link.id);
+      this.clearForm();
     }));
   }
 }
