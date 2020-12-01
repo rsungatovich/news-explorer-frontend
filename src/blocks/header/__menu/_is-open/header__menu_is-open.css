@@ -1,8 +1,9 @@
 .header__menu.header__menu_is-open {
+  z-index: 1;
   transform: translateY(0);
-  display: flex;
 }
 
 .header__menu.header__menu_is-open::after {
   opacity: 1;
+  pointer-events: unset;
 }

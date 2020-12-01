@@ -1,4 +1,5 @@
 @import url(./_is-visible/form__message_is-visible.css);
+@import url(./_main/form__message_main.css);
 
 .form__message {
   min-height: 16px;

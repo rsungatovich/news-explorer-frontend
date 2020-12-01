@@ -1,6 +1,7 @@
 .card__label {
   top: 24px;
   right: 24px;
+  cursor: pointer;
 }
 
 .card__label:nth-child(2) {

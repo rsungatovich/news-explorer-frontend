@@ -3,6 +3,7 @@
 @import url(./__description/not-found__description.css);
 
 .not-found {
+  min-height: 375px;
   display: flex;
   align-items: center;
   justify-content: center;

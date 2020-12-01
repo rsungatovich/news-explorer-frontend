@@ -1,44 +1,33 @@
-export default class Popup {
+import BaseComponent from './BaseComponent';
+
+export default class Popup extends  BaseComponent {
   constructor(props) {
+    super();
+
     this.popup = props.popup;
-    this.clearForm = props.clearForm;
-    this.forms = props.formItems.forms;
-    this.links = props.formItems.links;
-    this.openButton = props.openButton;
-    this.closeButton = props.closeButton;
-    this.defaultForm = props.defaultForm;
+    this.forms = props.forms;
+    this.links = props.formsLinks;
     this.isHiddenClass = props.isHiddenClass;
-    this._addListeners();
+
+    this.setListeners({
+      event: 'click',
+      element: this.links,
+      handler: this.setContent,
+    });
   }
 
-  _open = () => {
+  open = () => {
     this.popup.classList.remove(this.isHiddenClass);
   }
 
-  _close = () => {
+  close = () => {
     this.popup.classList.add(this.isHiddenClass);
   }
 
-  _setContent = (id) => {
-    this.forms.forEach((form) => {
-      id.toLowerCase().includes(form.id.toLowerCase())
-        ? form.classList.remove(this.isHiddenClass)
-        : form.classList.add(this.isHiddenClass);
-    })
-  }
-
-  _addListeners = () => {
-    this.closeButton.addEventListener('click', this._close);
-
-    this.openButton.addEventListener('click', () => {
-      this._setContent(this.defaultForm);
-      this.clearForm();
-      this._open()
-    });
-
-    this.links.forEach((link) => link.addEventListener('click', () => {
-      this._setContent(link.id);
-      this.clearForm();
-    }));
+  setContent = (event) => {
+    const formId = event ? event.target.dataset.form : 'auth-success';
+    this.forms.forEach((item) => item.id === formId
+      ? item.classList.remove(this.isHiddenClass)
+      : item.classList.add(this.isHiddenClass));
   }
 }

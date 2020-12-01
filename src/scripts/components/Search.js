@@ -1,22 +1,28 @@
-export default class Search {
+import BaseComponent from './BaseComponent';
+
+export default class Search extends  BaseComponent {
   constructor(props) {
+    super();
+
     this.form = props.form;
     this.input = props.input;
-    this.messageText = props.messageText;
-    this._addListeners();
+    this.errorMessage = props.errorMessages.search;
+
+    this.setListeners({
+      event: 'input',
+      element: this.form,
+      handler: this._checkValidity,
+    });
     this._setValidateMessage();
   }
 
   _setValidateMessage = () => {
-    this.input.setCustomValidity(this.messageText);
+    this.input.setCustomValidity(this.errorMessage);
   }
 
-  _addListeners = () => {
-    this.form.addEventListener('input', () => {
-      this.input.validity.valueMissing
-        ? this.input.setCustomValidity(this.messageText)
-        : this.input.setCustomValidity('');
-    });
-    this.form.addEventListener('submit', (e) => e.preventDefault());
+  _checkValidity = () => {
+    this.input.validity.valueMissing
+      ? this.input.setCustomValidity(this.errorMessage)
+      : this.input.setCustomValidity('');
   }
 }

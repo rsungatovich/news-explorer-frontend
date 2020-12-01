@@ -2,6 +2,7 @@
 @import url(./__description/loader__description.css);
 
 .loader {
+  min-height: 375px;
   display: flex;
   align-items: center;
   justify-content: center;
