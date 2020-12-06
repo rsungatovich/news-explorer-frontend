@@ -1,0 +1,19 @@
+.preloader {
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 4px solid #444;
+  border-bottom-color: #888;
+  display: block;
+  position: absolute;
+  animation: spin .75s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

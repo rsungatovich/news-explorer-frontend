@@ -5,7 +5,7 @@
 Дипломная работа студента Яндекс.Практикум. 2020.
 
 ## Стэк технологий:
-CSS, HTML, BEM.
+JS, CSS, HTML, OOP, BEM.
 
 ## Инструкции по запуску:
 - Склонировать репозиторий с github- "git clone"
@@ -27,4 +27,6 @@ CSS, HTML, BEM.
 - [Image Webpack loader](https://www.npmjs.com/package/image-webpack-loader)
 - [Cross-Env](https://www.npmjs.com/package/cross-env)
 
-Ссылка на работу: https://rsungatovich.github.io/news-explorer-frontend/
+Ссылка на сайт: https://chirikgaga.ga
+
+Ссылка на gp: https://rsungatovich.github.io/news-explorer-frontend/

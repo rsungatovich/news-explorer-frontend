@@ -18,7 +18,6 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  cursor: pointer;
 }
 
 .card:hover {
