@@ -6,13 +6,13 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #b6bcbf;
+  color: #fff;
   transition: .2s;
   text-decoration: none;
 }
 
-.header__link:not(.header__link_theme_white):hover {
-  color: #fff;
+.header__link:not(.header__link_theme_white):not(.header__link_is-active):hover:hover {
+  color: #d8e0e3;
 }
 
 @media screen and (max-width: 768px) {
